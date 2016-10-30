@@ -54,15 +54,11 @@ public class AddString {
 			sb.append(sum);
 			i--; j--;
 		}
+		//deal with carry
+		if (carry>0) sb.append(carry);
 		return sb.reverse().toString();
 		
 	}
-	
-	public static void main(String[] args)
-	{
-		AddString test= new AddString();
-		System.out.println(1099+20099);
-		System.out.println(test.addStrings("12345", "9"));
-	}
+
 
 }
